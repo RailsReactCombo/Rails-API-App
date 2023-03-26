@@ -107,5 +107,5 @@ $ bundle exec rails g annotate:install
 This will generate a rake task in lib/tasks/auto_annotate_models.rake with the default configuration.
 
 
-## 3. I hope this information is useful to you. Thank you for taking the time to read, RailsReactCombo.
+## I hope this information is useful to you. Thank you for taking the time to read, RailsReactCombo.
 
