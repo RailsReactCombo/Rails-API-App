@@ -9,26 +9,7 @@
 rails new my_app --database=postgresql --api --skip-git
 ```
 
-## 2. RSpec
-
-To ensure these instructions are up to date, if anything goes wrong please [reference the official documentation](https://github.com/rspec/rspec-rails).
-
-Add the following to the Gemfile:
-
-```ruby
-group :development, :test do
-  gem 'rspec-rails', '~> 6.0.0'
-end
-```
-
-Next run the following commands:
-
-```sh
-$ rails generate rspec:install
-$ bundle binstubs rspec-core
-```
-
-## 3. Other Gems
+## 2. Gems
 
 [Pry](https://github.com/pry/pry)  is a runtime developer console and IRB alternative with powerful introspection capabilities. Pry aims to be more than an IRB replacement. It is an attempt to bring REPL driven programming to the Ruby language.
 
