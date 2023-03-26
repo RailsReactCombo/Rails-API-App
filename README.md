@@ -70,7 +70,7 @@ Create a new file ```config/application.yml``` for your environment configuratio
 [Bullet](https://github.com/flyerhzm/bullet) gem is designed to help you increase your application's performance by reducing the number of queries it makes. It will watch your queries while you develop your application and notify you when you should add eager loading (N+1 queries), when you're using eager loading that isn't necessary and when you should use counter cache.
 
 ```ruby
-gem 'bullet', group: 'development'
+gem 'bullet', :group => :development
 ```
 
 ```sh
@@ -95,9 +95,7 @@ end
 [Annotate](https://makingsenseofrails.dev/how-to-use-the-annotate-gem-c44bfec97d03) gem will add a comment to the top of selected files (models, fixtures, specs) describing the database schema relevant to those files — including field names, index configuration, and foreign keys. It will update these comments automatically whenever you run rails db:migrate.
 
 ```ruby
-group :development do
-  gem 'annotate'
-end
+gem 'annotate', :group => :development
 ```
 
 ```sh
