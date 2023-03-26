@@ -9,7 +9,26 @@
 rails new my_app --database=postgresql --api --skip-git
 ```
 
-## 2. Gems
+## 2. RSpec
+
+To ensure these instructions are up to date, if anything goes wrong please [reference the official documentation](https://github.com/rspec/rspec-rails).
+
+Add the following to the Gemfile:
+
+```ruby
+group :development, :test do
+  gem 'rspec-rails', '~> 6.0.0'
+end
+```
+
+Next run the following commands:
+
+```sh
+$ rails generate rspec:install
+$ bundle binstubs rspec-core
+```
+
+## 3. Other Gems
 
 [Pry](https://github.com/pry/pry)  is a runtime developer console and IRB alternative with powerful introspection capabilities. Pry aims to be more than an IRB replacement. It is an attempt to bring REPL driven programming to the Ruby language.
 
@@ -51,7 +70,7 @@ Create a new file ```config/application.yml``` for your environment configuratio
 [Bullet](https://github.com/flyerhzm/bullet) gem is designed to help you increase your application's performance by reducing the number of queries it makes. It will watch your queries while you develop your application and notify you when you should add eager loading (N+1 queries), when you're using eager loading that isn't necessary and when you should use counter cache.
 
 ```ruby
-gem 'bullet', :group => :development
+gem 'bullet', group: 'development'
 ```
 
 ```sh
@@ -76,7 +95,9 @@ end
 [Annotate](https://makingsenseofrails.dev/how-to-use-the-annotate-gem-c44bfec97d03) gem will add a comment to the top of selected files (models, fixtures, specs) describing the database schema relevant to those files — including field names, index configuration, and foreign keys. It will update these comments automatically whenever you run rails db:migrate.
 
 ```ruby
-gem 'annotate', :group => :development
+group :development do
+  gem 'annotate'
+end
 ```
 
 ```sh
@@ -86,6 +107,4 @@ $ bundle exec rails g annotate:install
 This will generate a rake task in lib/tasks/auto_annotate_models.rake with the default configuration.
 
 
-## I hope this information is useful to you. 
-## Thank you for taking the time to read, RailsReactCombo.
-
+## 3. I hope this information is useful to you. Thank you for taking the time to read, RailsReactCombo.
