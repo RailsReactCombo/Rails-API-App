@@ -57,7 +57,7 @@ gem 'activerecord-import', '~> 0.15.0'
 Configuration values often include sensitive information. Figaro strives to be secure by default by encouraging a convention that keeps configuration out of Git.
 
 ```ruby
-gem "figaro"
+gem 'figaro'
 ```
 
 ```sh
