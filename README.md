@@ -45,14 +45,6 @@ Avoid repeating yourself, use pry-rails instead of copying the initializer to ev
 gem 'pry-rails', :group => :development
 ```
 
-
-The [ActiveRecord Import ](https://rubygems.org/gems/activerecord-import/versions/0.15.0) gem provides an alternative approach that allows you to import large amounts of data into your database using a single SQL INSERT statement. This can greatly speed up the import process and reduce the memory usage of your application.
-
-```ruby
-gem 'activerecord-import', '~> 0.15.0'
-```
-
-
 [Figaro](https://github.com/laserlemon/figaro) was written to make it easy to securely configure Rails applications.
 Configuration values often include sensitive information. Figaro strives to be secure by default by encouraging a convention that keeps configuration out of Git.
 
