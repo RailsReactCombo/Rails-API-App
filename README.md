@@ -24,6 +24,7 @@ end
 Next run the following commands:
 
 ```sh
+$ bundle install
 $ rails generate rspec:install
 $ bundle binstubs rspec-core
 ```
