@@ -1,6 +1,6 @@
 # Rails-API-App
 
-## How Create EVERY Rails API App
+## How to Create EVERY Rails API App
 
 ## 1. Generate the project.
 [List of all available options](https://www.bootrails.com/blog/rails-new-options/)
